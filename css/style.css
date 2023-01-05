@@ -235,7 +235,7 @@ body {
 
 }
 .maininicio .h1{
-    font-style: var(--tipo-principal);
+    font-family: var(--tipo-principal);
     color: white;
     font-size: 10em;
     padding-left: .4em;
@@ -261,19 +261,19 @@ body {
 }
 .left .h2{
     text-align: center;
-    font-style: var(--tipo-principal);
+    font-family: var(--tipo-principal);
     font-size: 5rem;
 }
 .left .p{
     text-align: center;
-    font-style: var(--tipo-secundaria);
+    font-family: var(--tipo-secundaria);
     font-size: 1.3em;
     
     margin: 2em 3em;
 }
 .right .h3{
     text-align: center;
-    font-style: var(--tipo-principal);
+    font-family: var(--tipo-principal);
     font-size: 2em;
 }
 
@@ -339,6 +339,9 @@ body {
   overflow: hidden;
   border-radius: 1em;
 }
+.grideventos img{
+  width: 450px;
+}
 .grideventos .h5{
     width:100%;
     height: 100%;
@@ -367,7 +370,7 @@ body {
     font-size: 3.5rem;
   }
   .grideventos .h4{
-    font-style: var(--tipo-principal);
+    font-family: var(--tipo-principal);
     font-size: 10em;
 
     transform: rotate(-90deg); 
@@ -423,7 +426,7 @@ body {
   height: 100vh;
 }
 .sectionabout .h1{
-   font-style: var(--tipo-principal);
+   font-family: var(--tipo-principal);
     color: white;
     font-size: 10em;
     padding-left: .4em;
@@ -432,7 +435,7 @@ body {
 
 }
 .sectionabout .h2{
-  font-style: var(--tipo-secundaria);
+  font-family: var(--tipo-secundaria);
   font-size: 7.5em;
   padding: 0;
   color: white;
@@ -442,7 +445,7 @@ body {
 }
 .mainabout .h3{
   text-align: center;
-  font-style: var(--tipo-secundaria);
+  font-family: var(--tipo-secundaria);
   font-size: 3em;
   margin: .5em;
 }
@@ -529,12 +532,12 @@ body {
   color: white;
 }
 .staff .h3{
- font-style: var(--tipo-principal); 
+ font-family: var(--tipo-principal); 
  font-size: 1.5em;
   
 }
 .staff .h4{
- font-style: var(--tipo-secundaria); 
+ font-family: var(--tipo-secundaria); 
  padding: .5em;
 }
 .staff .contactostaff{
@@ -574,7 +577,7 @@ body {
  } 
  
  .sectionministerios h1{
-  font-style: var(--tipo-principal);
+  font-family: var(--tipo-principal);
   font-size: 10em;
   color: white;    
   text-shadow: 5px 2px 6px #FFFFFF;    
@@ -622,12 +625,12 @@ body {
 }
 
  .cardministerios .front h3{
-  font-style: var(--tipo-secundaria);
+  font-family: var(--tipo-secundaria);
   font-size: 2em;
   color: #ffffff;
 }
 .cardministerios .front h4{
-  font-style: var(--tipo-secundaria);
+  font-family: var(--tipo-secundaria);
   font-size: 1.2em;  
   color: #ffffff;
   background: #2b364a;
@@ -662,7 +665,7 @@ body {
 }
 .sectionministerios .h2{
   font-size: 3.5em;
-  font-style: var(--tipo-secundaria);
+  font-family: var(--tipo-secundaria);
   border-bottom: black solid;
 
 }
@@ -771,7 +774,7 @@ a img {
 }
 .photo-album h1 span {
   background-color: rgba(255, 255, 255, 0.575);
-  font-style: var(--tipo-principal);
+  font-family: var(--tipo-principal);
   font-size: 3em;
   padding: .3em;
   -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
@@ -927,14 +930,14 @@ a:focus {
 }
 .cabecerajovenes h2{
   font-size: 5em;
-  font-style: var(--tipo-principal);
+  font-family: var(--tipo-principal);
   color: #ffffff;
   
    
 }
 .cabecerajovenes h3{
   font-size: 3em;
-  font-style: var(--tipo-secundaria);
+  font-family: var(--tipo-secundaria);
   color: #ffffff;
   margin-top: 2em;
 }
@@ -956,8 +959,9 @@ a:focus {
 }
 .ministeriojovenes .eventojoven{
   font-size: 5em;
-  font-style: var(--tipo-secundaria);
+  font-family: var(--tipo-secundaria);
   color: black;
+
 
 }
 
@@ -974,24 +978,26 @@ a:focus {
   line-height: 1.4em;
   font-size: 16px;
 
+  border-radius: 2%;
+
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-/* .ministeriojovenes .snip1361 * {
+ .ministeriojovenes .eventojovenes * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-} */
+} 
 .eventojovenes img {
   max-width: 100%;
   vertical-align: top;
 }
 .eventojovenes figcaption {
   position: absolute;
-  top: calc(88%);
+  top: calc(90%);
   width: 100%;
   background-color: #ffffff;
   padding: 15px 25px 65px;
@@ -1046,7 +1052,7 @@ a:focus {
 }
 .eventojovenes:hover figcaption,
 .eventojovenes.hover figcaption {
-  top: 100px;
+  top: 420px;
 }
 
 /* CONTACTO */
@@ -1174,7 +1180,7 @@ form.form_contact input[type="button"]{
     align-self: flex-end;
 
     color: #fff;
-	font-family: 'Open sans';
+	font-family: var(--tipo-secundaria);
 	font-size: 16px;
 	font-weight: 600;
 	cursor: pointer;
