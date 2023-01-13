@@ -1,0 +1,296 @@
+.maininicio .sectioninicio{
+    display: flex;  
+    align-items: center;
+    position: relative;
+  }
+  .maininicio .imgbanner{
+      height: 100vh;
+  }
+  .maininicio .cabecera{
+      position: absolute; 
+      display: flex;
+      align-items: center;
+      
+  
+  }
+  .maininicio .h1{
+      font-family: var(--tipo-principal);
+      color: white;
+      font-size: 10em;
+      padding-left: .4em;
+  
+      text-shadow: 5px 2px 6px #FFFFFF;        
+  }
+  .maininicio .gridtexto{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      "left right";
+  
+  }
+  .gridtexto .left{
+      grid-area: left;
+      padding-top: 1em;
+  }
+  .gridtexto .right{
+      grid-area: right;
+      padding-top: 1em;
+  
+  }
+  .left .h2{
+      text-align: center;
+      font-family: var(--tipo-principal);
+      font-size: 5rem;
+  }
+  .left .p{
+      text-align: center;
+      font-family: var(--tipo-secundaria);
+      font-size: 1.3em;
+      
+      margin: 2em 3em;
+  }
+  .right .h3{
+      text-align: center;
+      font-family: var(--tipo-principal);
+      font-size: 2em;
+  }
+  
+  .acordeon{
+    width: 90%;
+    max-width: 50em;
+    padding: 1em;
+    margin: 3em;
+  
+    border-radius: 57px;
+    background: linear-gradient(145deg, #9ddad4b4, #84b8b2);
+    box-shadow:  5px 5px 0px #92cac4,
+                 -5px -5px 0px #94cec8;
+  }
+  .acordeon .bloque{
+    margin: 0 0 1em;
+    padding: 1em;
+  
+    border-radius: 57px;
+    background: linear-gradient(145deg, #9ddad4, #84b8b2);
+    box-shadow:  5px 5px 0px #92cac4,
+                 -5px -5px 0px #94cec8;
+  }
+  .acordeon .h5{
+    margin: 0 0 1em;
+    padding: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    
+  }
+  .acordeon .contenido{
+    height: 0;
+    padding: 0em;
+    overflow: hidden;
+    transition: all .5s ease;
+    color: white;
+  }
+  .acordeon .bloque.activo .contenido{
+    height: auto;
+    padding: .5em;
+    
+  }
+   
+  .maininicio .grideventos{
+      
+      margin: 1em 2em;
+    
+      display: grid;
+      grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
+      gap: 4em;
+  
+  }
+  .grideventos .article{
+    width: 100%;
+    min-height: 20vh;
+  
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+  }
+  .grideventos img{
+    width: 450px;
+  }
+  .grideventos .h5{
+      width:100%;
+      height: 100%;
+      background-color: rgba(20, 20, 20, 0.5);
+      backdrop-filter: blur(1rem);
+      position: absolute;
+      bottom:0;
+      left:0;
+      
+      display: flex;
+      flex-flow: row wrap ;
+      justify-content: center;
+      align-items: center;
+      
+      color: white;
+      font-size: 1.8em;
+      font-family: var(--tipo-secundaria);
+      font-style: italic;
+      opacity: 0;
+      transform:translateZ(1) scale(1.5);
+      transition: all .5s ease;
+  }
+  .grideventos .article:hover .h5{
+      opacity: 1;
+      transform:translateZ(1) scale(1);
+      font-size: 3.5rem;
+    }
+    .grideventos .h4{
+      font-family: var(--tipo-principal);
+      font-size: 10em;
+  
+      transform: rotate(-90deg); 
+ }  
+
+ @media screen and (max-width: 768px){
+
+    .maininicio .h1{        
+        font-size: 6em;              
+    }
+    .maininicio .gridtexto{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "left"
+        "right";    
+    }
+    .left .h2{
+        font-size: 3rem;
+    }
+    .left .p{       
+        font-size: 1em;       
+    }
+    .right .h3{
+        font-size: 2em;
+    } 
+    .acordeon .h5{
+        padding: .5em;
+        margin: 0;
+        border-radius: 50px;
+        cursor: pointer;
+        color: white;        
+      }
+      .acordeon .contenido{
+        height: 0;
+        padding: 0em;
+        overflow: hidden;
+        transition: all .5s ease;
+        color: white;
+      }
+      .acordeon .bloque.activo .contenido{
+        height: auto;
+        padding: .5em;
+      }
+      .maininicio .grideventos{
+      
+        margin: 1em 2em;
+      
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: .5em;
+    
+    }
+    .grideventos .article{
+      width: 100%;
+      min-height: 20vh;
+    
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    
+      position: relative;
+      overflow: hidden;
+      border-radius: 1em;
+    }
+    .grideventos img{
+      width: 350px;
+      height: 300px;
+    }
+    .grideventos .h5{
+        width:100%;
+        height: 100%;
+        background-color: rgba(20, 20, 20, 0.5);
+        backdrop-filter: blur(1rem);
+        position: absolute;
+        bottom:0;
+        left:0;
+        
+        display: flex;
+        flex-flow: row wrap ;
+        justify-content: center;
+        align-items: center;
+        
+        color: white;
+        font-size: 1.8em;
+        font-family: var(--tipo-secundaria);
+        font-style: italic;
+        opacity: 0;
+        transform:translateZ(1) scale(1.5);
+        transition: all .5s ease;
+    }
+    .grideventos .article:hover .h5{
+        opacity: 1;
+        transform:translateZ(1) scale(1);
+        font-size: 3.5rem;
+      }
+      .grideventos .h4{
+        font-family: var(--tipo-principal);
+        font-size: 5em;
+    
+        transform: rotate(0deg); 
+   }  
+ } 
+
+@media  screen and (max-width: 320px) {
+ 
+
+  .maininicio .h1{        
+        font-size: 3em;              
+    }
+    .acordeon{
+      width: 90%;
+      max-width: 50em;
+      padding: 0 ;
+      margin: 0 1em;
+    
+      border-radius: 57px;
+      background: linear-gradient(145deg, #9ddad4b4, #84b8b2);
+      box-shadow:  5px 5px 0px #92cac4,
+                   -5px -5px 0px #94cec8;
+    }
+ 
+    .maininicio .grideventos{
+      
+      margin: 1em 2em;
+    
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1em;
+  
+  }
+  .grideventos .h4{    
+    font-size: 3em;
+    transform: rotate(0deg); 
+}  
+.grideventos img{
+  width: 250px;
+  height: 200px;
+}
+}

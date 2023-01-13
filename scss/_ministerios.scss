@@ -1,0 +1,750 @@
+/* MINISTERIOS */
+.mainministerios{
+    width: 100%;
+   }
+   .mainministerios .sectionministerios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+   }
+   .sectionministerios .imgbanner{
+    width: 100%;
+    height: 100vh;
+   } 
+   .sectionministerios .conteiner{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: r;
+    justify-content: center;
+    align-items: center;
+   
+   
+  
+  }
+  
+  
+   .sectionministerios h1{
+    font-family: var(--tipo-principal);
+    font-size: 10em;
+    color: white;    
+    text-shadow: 5px 2px 6px #FFFFFF;     
+    position: absolute; 
+    margin-bottom: 1em;
+    
+   }
+   
+  
+  .cardministerios{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 20em;
+    height: 24em;
+   margin-top: 27em;
+    cursor: pointer;
+  }
+  .cardministerios .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .cardministerios .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   .cardministerios .front h3{
+    font-family: var(--tipo-secundaria);
+    font-size: 2em;
+    color: #ffffff;
+  }
+  .cardministerios .front h4{
+    font-family: var(--tipo-secundaria);
+    font-size: 1.2em;  
+    color: #ffffff;
+    background: #2b364a;
+  } 
+  .cardministerios .back{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .cardministerios .back h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: 1em 0 1em 0;
+  }
+  .cardministerios .back p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+  }
+  .cardministerios:hover .front{
+    display: none;
+  }
+  .cardministerios:hover .back{
+    display: inline;
+  
+  }
+  .sectionministerios .h2{
+    font-size: 3.5em;
+    font-family: var(--tipo-secundaria);
+    border-bottom: black solid;
+  
+  }
+  .sectionministerios .actividadkid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .sectionministerios .actividadleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .actividadkid .h3{
+    font-size: 2.5em;
+  
+  }
+  .actividadkid .p{
+    text-align: center;
+    padding: 0 8em;
+    font-size: 1.5em;
+  }
+  .sectionministerios .actividadright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    cursor: pointer;
+    overflow: hidden;
+  
+  }
+  
+  .sectionministerios .actividadright img{
+      width: 80%;
+      
+      object-fit: cover;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+     
+    
+   }
+   .sectionministerios .actividadright img:hover{
+    transform: scale(1.05);
+   }
+  
+  a.polaroid {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 10px 20px 10px;
+    width: 150px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    z-index: 2;
+    font-size: 0.7em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+  }
+  a.polaroid:hover,
+  a.polaroid:focus,
+  a.polaroid:active {
+    z-index: 7;
+    border-color: #6A6A6A;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  .polaroid img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  a img {
+    border: none;
+    display: block;
+  }
+  
+  .photo-album {
+    position: relative;
+    width: 80%;
+    margin: 10em 5em 0em 10em;
+    height: 69.3vh;
+    bottom: 5.5em;
+    
+  }
+  .photo-album .polaroid {
+    position: absolute;
+  }
+  .photo-album h1 {
+    position: absolute;
+    z-index: 9;
+    top: 200px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.9;
+  }
+  .photo-album h1 span {
+    background-color: rgba(255, 255, 255, 0.575);
+    font-family: var(--tipo-principal);
+    font-size: 3em;
+    padding: .3em;
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+    border: 1px solid #6A6A6A;
+  }
+  .photo-album .small {
+    width: 200px;
+  }
+  .photo-album .small img {
+    width: 200px;
+    height: 200px;
+  }
+  .photo-album .medium {
+    width: 300px;
+    padding: 13px 13px 26px 13px;
+  }
+  .photo-album .medium img {
+    width: 300px;
+    height: 300px;
+  }
+  .photo-album .large {
+    width: 400px;
+    padding: 20px 20px 30px 20px;
+  }
+  .photo-album .large img {
+    width: 400px;
+    height: 400px;
+  }
+  .photo-album .img1 {
+    bottom: 2em ;
+    right: 20em;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  .photo-album .img2 {
+    top: 4em;
+    right: 0em;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  .photo-album .img3 {
+    left: 330px;
+    top: 0;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  .photo-album .img4 {
+    top: 10px;
+    left: 495px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  .photo-album .img5 {
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  .photo-album .img6 {
+    bottom: 10px;
+    right: 156px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+  .photo-album .img7 {
+    bottom:0;
+    left:400px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  .photo-album .img8 {
+    top: 300px;
+    left: 740px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .photo-album .img9 {
+    bottom: 0;
+    left: 100px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .photo-album .img10 {
+    top: 0;
+    left: 1000px;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+  .photo-album .img11 {
+    top: 50px;
+    right: 150px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .photo-album .img12 {
+    top: 0;
+    left: 780px;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+  .photo-album .img13 {
+    top: 330px;
+    right: 800px;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  .photo-album .img14 {
+    top: 150px;
+    left: 350px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  .photo-album .img15 {
+    left:176px;
+    top:20px;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  
+  a:hover,
+  a:focus {
+    z-index: 5;
+  }
+  
+  .sectionministerios .cabecerajovenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
+  }
+  .sectionministerios .imgjovenes{
+    width: 100%;
+    height: 100vh;
+  }
+  .cabecerajovenes h2{
+    font-size: 5em;
+    font-family: var(--tipo-principal);
+    color: #ffffff;
+    
+     
+  }
+  .cabecerajovenes h3{
+    font-size: 3em;
+    font-family: var(--tipo-secundaria);
+    color: #ffffff;
+    margin-top: 2em;
+  }
+  .cabecerajovenes p{
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+    margin: 0em 13em;
+    padding: 1em;
+  }
+  .ministeriojovenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    width: 100%;
+    height: 100vh;
+  }
+  .ministeriojovenes .eventojoven{
+    font-size: 5em;
+    font-family: var(--tipo-secundaria);
+    color: black;
+  
+  
+  }
+  
+  .ministeriojovenes .eventojovenes {
+    font-family: var(--tipo-principal);  
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 530px;
+    max-width: 315px;
+    width: 100%;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    font-size: 16px;
+  
+    border-radius: 2%;
+  
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+   .ministeriojovenes .eventojovenes * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  } 
+  .eventojovenes img {
+    max-width: 100%;
+    vertical-align: top;
+  }
+  .eventojovenes figcaption {
+    position: absolute;
+    top: calc(90%);
+    width: 100%;
+    background-color: #ffffff;
+    padding: 15px 25px 65px;
+  }
+  .eventojovenes figcaption:before {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+    background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+  }
+  .eventojovenes h3{
+    margin: 0 0 10px;
+    font-family: var(--tipo-secundaria);
+    text-align: center;
+  
+  }
+  .eventojovenes h4{
+    margin: 0 0 10px;
+    font-family: var(--tipo-secundaria);
+    text-align: center;
+  
+  }
+  .eventojovenes p {
+    margin: 0 0 10px;
+    font-family: var(--tipo-secundaria);
+    text-align: center;
+  }
+  .eventojovenes h3 {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  .eventojovenes p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }
+  .eventojovenes a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .eventojovenes:hover figcaption,
+  .eventojovenes.hover figcaption {
+    top: 420px;
+  }
+  
+  /* CONTACTO */
+  .maincontacto{
+    width: 100%;
+    height: 86vh;
+    position: relative;
+    padding-top: 7em;
+  }
+  .form_wrap{
+      width: 1050px;
+      height: 530px;
+      margin: 50px auto;
+      display: flex;
+  
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+@media screen and (max-width: 1024px) {
+
+  .actividadkid .p{
+    padding: 0;
+  }
+  .photo-album{
+    margin: 5em 0 5em 0;
+  }
+  .photo-album h1{
+    left: 100px;
+  }
+  .photo-album .large{
+    width: 300px;
+    height: 300px;
+  }
+  .photo-album .large img{
+    width: auto;
+    height: 260px;
+  }
+  .photo-album .medium{
+    width: 200px;
+    height: 200px;
+  }
+  .photo-album .medium img{
+    width: auto;
+    height: 160px;
+  }
+  .photo-album .small {
+    width: 150px;
+    height: 150px;
+  }
+  .photo-album .small img{
+    width: auto;
+    height: 130px;
+  }
+  .photo-album .img1{
+    bottom: 8em;
+  }
+  .photo-album .img3{
+    left: 150px;
+  }
+  .photo-album .img4{
+    left: 300px;
+  }
+  .photo-album .img5{
+    left: 700px;
+  }
+  .photo-album .img6{
+    right: 100px;
+  }
+  .photo-album .img7{
+    left: 850px;
+  }
+  .photo-album .img8{
+    left: 400px;
+    top: 400px;
+  }
+  .photo-album .img10{
+    left: 840px;
+  }
+  .photo-album .img13{
+    right: 650px;
+  }
+  .photo-album .img14{
+    left: 180px;
+  }
+  .photo-album .img15{
+      left: 20px;
+  }
+  .cabecerajovenes h3{
+    margin-top: 1em;
+  }
+  .cabecerajovenes p{
+    margin: 0 5em;
+  }
+  .ministeriojovenes .eventojoven{
+    font-size: 4em;
+  }
+  .ministeriojovenes .eventojovenes{
+    min-width: 300px;
+    max-width: 400px;
+  }
+  .eventojovenes figcaption {
+    top: 80%;
+ }
+ .eventojovenes:hover figcaption,
+  .eventojovenes.hover figcaption {
+    top: 250px;
+  }
+ .eventojovenes h3{
+  font-size: 1.2em;
+ }
+}
+@media screen and (max-width: 768px){
+  .sectionministerios h1{
+    font-size: 5em;
+  }
+  .sectionministerios .h2{
+    font-size: 3em;
+  }
+  .cardministerios{
+    width: 15em;
+    height: 19em;
+    margin-top: 15em;
+  }
+  .cardministerios .front h3{
+    font-size: 1.7em;
+  }
+  .cardministerios .back h3{
+    font-size: 1.7em;
+  }
+  .cardministerios .back p{
+    font-size: 1em;
+  }
+  .actividadkid .h3{
+    font-size: 2em;
+  }
+  .actividadkid .p{
+    font-size: 1.2em;
+  }
+  .photo-album h1{
+    left: 100px;
+    top: 100px;
+  }
+  .photo-album h1 span{
+    font-size: 2em;
+  }
+  .photo-album .img2{
+    display: none;
+  } 
+ 
+  
+  .photo-album .img10{
+    display: none;
+  }
+  .photo-album .img15{
+    display: none;
+  }
+  .photo-album .large{
+    width: 200px;
+    height: 200px;
+  }
+  .photo-album .large img{
+    width: auto;
+    height: 180px;
+  }
+  .photo-album .medium{
+    width: 150px;
+    height: 150px;
+  }
+  .photo-album .medium img{
+    width: auto;
+    height: 130px;
+  }
+  .photo-album .small {
+    width: 120px;
+    height: 120px;
+  }
+  .photo-album .small img{
+    width: auto;
+    height: 100px;
+  }
+  .photo-album .img1{
+    bottom: 2em;
+    left: 250px;
+  }
+  .photo-album .img3{
+    left: 50px;
+  }
+  .photo-album .img4{
+    left: 180px;
+  }
+  .photo-album .img5{
+    width: 150px;
+    height: 150px;
+    left: 430px;
+  }
+  .polaroid img{
+    width: auto;
+    height: 130px;
+  }
+  .photo-album .img6{
+    right: 0;
+    left: 550px;
+    bottom: 100px;
+  }
+  .photo-album .img7{
+    left: 550px;
+  } 
+  .photo-album .img8{
+    top: 100px;
+  }
+  .photo-album .img9{
+    left: 50px;
+  }
+  .photo-album .img11{
+    top: 0px;
+    right: 140px;
+  }
+  .photo-album .img12{
+    left: 450px;
+  }
+  .cabecerajovenes h2{
+    font-size: 3em;
+  }
+  .cabecerajovenes h3{
+    font-size: 2em;
+    margin: .5em;
+  }
+  .cabecerajovenes p{
+    font-size: 1em;
+    margin: 0 2em;
+  }
+  .ministeriojovenes .eventojoven{
+    font-size: 2.5em;
+  }
+  .ministeriojovenes .eventojovenes{
+    min-width: 100px;
+    max-width: 450px;
+  }
+  .eventojovenes figcaption {
+    top: 90%;
+ }
+  .eventojovenes:hover figcaption,
+  .eventojovenes.hover figcaption {
+    top: 100px;
+  }
+ .eventojovenes h3{
+  font-size: 1em;
+ }
+}

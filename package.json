@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-iglesia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeremiasJM/Proyecto-Iglesia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeremiasJM/Proyecto-Iglesia/issues"
+  },
+  "homepage": "https://github.com/JeremiasJM/Proyecto-Iglesia#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

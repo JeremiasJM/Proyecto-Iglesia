@@ -144,8 +144,7 @@ svg {
 body {
   min-height: 100vh;
   font-size: 100%;
-  font-family: var(--tipo-principal);
-  color: var(--negro);
+  color: black;
 
  }
 /* CODIGO */
@@ -153,7 +152,7 @@ body {
 .header{
 
     width: 100%;
-    padding: 1em;
+    padding: .5em;
     background-color: #6cbdb5;
 
     display: flex;
@@ -163,15 +162,27 @@ body {
     position: fixed;
     top:0;
 
-    z-index: 7;
+    z-index: 10;
 
     color: white;
 }
-
+.header .logo{
+  display: flex;
+  flex-flow: row nowrap;
+  
+}
 .header .a{
+   
    font-family: var(--tipo-principal); 
    font-size: 1.5em;
 }
+.header img{
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+   
+
 .header .button{
    display: none;
 }
@@ -766,7 +777,7 @@ a img {
 }
 .photo-album h1 {
   position: absolute;
-  z-index: 5;
+  z-index: 9;
   top: 200px;
   text-align: center;
   width: 100%;

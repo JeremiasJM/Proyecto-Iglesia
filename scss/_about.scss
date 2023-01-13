@@ -1,0 +1,224 @@
+.mainabout .sectionabout{
+    display: flex;  
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+  }
+  .sectionabout .cabeceraabout{
+      position: absolute;
+  
+  }
+  .sectionabout .imgbanner{
+    height: 100vh;
+  }
+  .sectionabout .h1{
+     font-family: var(--tipo-principal);
+      color: white;
+      font-size: 10em;
+      padding-left: .4em;
+  
+      text-shadow: 5px 2px 6px #FFFFFF;  
+  
+  }
+  .sectionabout .h2{
+    font-family: var(--tipo-secundaria);
+    font-size: 7.5em;
+    padding: 0;
+    color: white;
+    text-shadow: 5px 2px 6px #FFFFFF;     
+    
+    text-align: center;
+  }
+  .mainabout .h3{
+    text-align: center;
+    font-family: var(--tipo-secundaria);
+    font-size: 3em;
+    margin: .5em;
+  }
+  .mainabout .p{
+    text-align: center;
+    font-size: 1.25em;
+    margin: 0 6.5em;
+  }
+  .sectionstaff {
+    display: flex;  
+    align-items: center;
+    margin: 2em 0;
+    
+  }
+  .sectionstaff img{
+    height: 100vh;
+  }
+  .staff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   padding: 2em;
+  } 
+  .staff .gridstaff{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:auto;
+    margin: .5em 1em;
+    gap: 5em;
+  }
+  .staff .card{
+    position: relative;
+    width: 20em;  
+    height: 25em;
+  
+    background: #2b364a;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s ease;
+  }
+  .staff .card:hover{
+    box-shadow: -1px 1px 24px 3px #13c8b5;
+  
+    transform: translateY(-15px);
+  }
+  .staff .card .head{
+    height: 125px;
+    width: 100%;
+    position: relative;
+  }
+  .staff .head .circulo{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #21a3a3;
+    bottom: 0;
+  }
+  .staff .img{
+    margin: 1em 5em; 
+   
+    width: 150px;
+    height: 150px;
+  
+    position: absolute;
+    background: #ffffff;
+    padding: 5px; 
+    border-radius: 50%; 
+    
+    
+    
+  }
+  .staff .img img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%; 
+   object-fit: cover;
+   
+  }
+  .staff .infostaff{
+    padding-top: 3em;
+    text-align: center;
+    color: white;
+  }
+  .staff .h3{
+   font-family: var(--tipo-principal); 
+   font-size: 1.5em;
+    
+  }
+  .staff .h4{
+   font-family: var(--tipo-secundaria); 
+   padding: .5em;
+  }
+  .staff .contactostaff{
+    padding-top: 6.5em;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .staff .contactostaff a{
+    color: white;
+    background: #21a3a3;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: .3s;
+  }
+  .staff .contactostaff a:hover{
+    background: #6cf3d5;
+   }
+@media screen and (max-width: 768px) {
+    .sectionabout .h2{
+        font-size: 6em;
+    }
+    .sectionabout .h1{
+     font-size: 8em;
+     padding-left: 0em;
+     
+    }
+    .staff .gridstaff{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:auto;
+        margin: .5em 1em;
+        gap: 5em;
+      }
+      .staff .card {        
+        width: 15em;
+        height: 20em;       
+    }
+    .staff .head .circulo {        
+        width: 240px;
+        height: 240px;       
+    }
+    .staff .img{
+        margin: 1em 3em;
+    }
+    .staff .infostaff{
+        padding-top: 5em;
+    }
+}
+@media screen and (max-width: 500px){
+    .sectionabout .h2{
+        font-size: 3em;
+    }
+    .sectionabout .h1{
+     font-size: 4em;
+     padding-left: .5em;     
+    }
+    .mainabout .h3{
+        font-size: 2em;
+        margin: .5em 0;
+    }
+    .mainabout .p{
+        font-size: 1em;
+        margin: 0em;
+    }
+    .staff .gridstaff{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:auto;
+        margin: .5em 1em;
+        gap: 1em;
+      }
+    .staff .card {        
+        width: 8em;
+        height: 15em;       
+    }
+    .staff .head .circulo {        
+        width: 130px;
+        height: 130px;      
+        bottom: 3em; 
+    }
+    .staff .img{
+        margin: .5em 1em;
+        width: 100px;
+        height: 100px;
+        
+    }
+    .staff .infostaff{
+        padding-top: 1em;
+    }
+    .staff .h3{
+        font-size: 1em;
+    }
+
+}
