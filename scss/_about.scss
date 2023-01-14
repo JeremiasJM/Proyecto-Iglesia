@@ -176,6 +176,9 @@
     }
 }
 @media screen and (max-width: 500px){
+  .sectionabout .imgbanner{
+    height: 50vh;
+  }
     .sectionabout .h2{
         font-size: 3em;
     }
@@ -190,6 +193,9 @@
     .mainabout .p{
         font-size: 1em;
         margin: 0em;
+    }
+    .sectionstaff img{
+      height: 50vh;
     }
     .staff .gridstaff{
         display: grid;

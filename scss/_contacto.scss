@@ -167,7 +167,7 @@
         flex-direction: column;
 
         width: 300px;
-        height: auto;
+        height: 100vh;
 
         margin: 10px auto;
     }
@@ -182,5 +182,11 @@
     }
     form.form_contact{
         width: 100%;
+    }
+    form.form_contact .user_info{
+        padding: 1em 0;
+    }
+    form.form_contact label{
+        padding: 1em 0;
     }
 }

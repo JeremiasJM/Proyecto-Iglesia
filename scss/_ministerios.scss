@@ -748,3 +748,145 @@
   font-size: 1em;
  }
 }
+@media screen and (max-width: 500px) {
+  .mainministerios .sectionministerios{
+    height: 50vh;
+  }
+  .sectionministerios .imgbanner{
+    height: 50vh;
+  }
+  .sectionministerios h1{
+    font-size: 3em;
+  }
+  .cardministerios{
+    width: 6.5em;
+    height: 10em;
+    margin-top: 8em;
+  }
+  .cardministerios .front h3{
+    font-size: .8em;
+  }
+  .cardministerios .front h4{
+    font-size: .6em;
+  }
+  .cardministerios .back h3{
+    font-size: 1em;
+  }
+  .cardministerios .back p{
+    font-size: .5em;
+  }
+  .sectionministerios .h2{
+    font-size: 1.5;
+    text-align: center;
+  }
+  .sectionministerios .actividadkid {
+    flex-direction: column;
+ }
+  .sectionministerios .actividadleft{
+    margin: 1em 0;
+    width: 100%;
+  }
+  .sectionministerios .actividadright{
+    width: 100%;
+    height: auto;
+  }
+  .actividadkid .h3{
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .actividadkid .p{
+    font-size: 1em;
+    text-align: center;
+  }
+  .photo-album{
+    width: 100%;
+    height: 50vh;
+    margin: 30em 0 0em 0;
+  }
+  .photo-album h1{
+    top: 10px;
+    left: 5px;
+  }
+  .photo-album h1 span{
+    font-size: 1.5em;
+  }
+  .photo-album .img1{
+    display: none;
+  }
+  
+  .photo-album .img3{
+    left: 20px;
+    top: 100px;
+  }
+  .photo-album .img4{
+    left: 100px;
+  }
+  .photo-album .img5{
+    left: 20px;
+    bottom: 300px;
+  }
+  .photo-album .img6{
+    left: 140px;
+    bottom: 300px;
+    
+  }
+  .photo-album .img7{
+    display: none;
+  }
+  .photo-album .img8{
+    left: 180px;
+  }
+  .photo-album .img9{
+    display: none;
+  }
+  .photo-album .img11{
+    right: 170px;
+  }
+  .photo-album .img12{
+    left: 180px;
+  }
+  .photo-album .img14{
+    left: 100px;
+  }
+  .photo-album .img15{
+    display: none;
+  }
+  .sectionministerios .imgjovenes{
+    height: 50vh;
+  }
+  .cabecerajovenes h2{
+    font-size: 1.5em;
+  }
+  .cabecerajovenes h3{
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .cabecerajovenes p{
+    font-size: .9em;
+    margin: 0 .5em;
+    padding: .5em;
+  }
+  .ministeriojovenes .eventojoven{
+    font-size: 1.5em;
+  }
+  .ministeriojovenes .eventojovenes{
+    min-width: 100px;
+    max-width: 300px;
+  }
+  .eventojovenes figcaption {
+    top: 85%;
+ }
+ .eventojovenes h4{
+  font-size: .9em;
+ }
+ .eventojovenes p{
+  font-size: .8em;
+ }
+  .eventojovenes:hover figcaption,
+  .eventojovenes.hover figcaption {
+    top: 50px;
+  }
+ .eventojovenes h3{
+  font-size: 1em;
+ }
+}

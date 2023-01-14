@@ -258,11 +258,13 @@
    }  
  } 
 
-@media  screen and (max-width: 320px) {
+@media  screen and (max-width: 500px) {
  
-
+  .maininicio .imgbanner{
+    height: 50vh;
+  }
   .maininicio .h1{        
-        font-size: 3em;              
+        font-size: 2.5em;              
     }
     .acordeon{
       width: 90%;
@@ -275,7 +277,12 @@
       box-shadow:  5px 5px 0px #92cac4,
                    -5px -5px 0px #94cec8;
     }
- 
+    .gridtexto .right {
+      
+      padding-right: .5em;
+      
+       }
+
     .maininicio .grideventos{
       
       margin: 1em 2em;
