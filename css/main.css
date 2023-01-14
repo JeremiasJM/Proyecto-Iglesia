@@ -533,7 +533,7 @@ body {
     width: 90%;
     max-width: 50em;
     padding: 0;
-    margin: 0 1em 0 2em;
+    margin: 0 0 0 1.5em;
     border-radius: 57px;
     background: linear-gradient(145deg, rgba(157, 218, 212, 0.7058823529), #84b8b2);
     box-shadow: 5px 5px 0px #92cac4, -5px -5px 0px #94cec8;
@@ -745,7 +745,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .sectionabout .cabeceraabout {
-    margin-left: 5em;
+    margin-left: 3em;
   }
   .sectionabout .imgbanner {
     height: 50vh;
@@ -1517,6 +1517,7 @@ a:focus {
   }
   .photo-album .img3 {
     left: 50px;
+    top: 50px;
   }
   .photo-album .img4 {
     left: 180px;
@@ -1524,7 +1525,8 @@ a:focus {
   .photo-album .img5 {
     width: 150px;
     height: 150px;
-    left: 430px;
+    left: 350px;
+    bottom: 190px;
   }
   .polaroid img {
     width: auto;
@@ -1533,16 +1535,18 @@ a:focus {
   .photo-album .img6 {
     right: 0;
     left: 550px;
-    bottom: 100px;
+    bottom: 290px;
   }
   .photo-album .img7 {
-    left: 550px;
+    left: 470px;
   }
   .photo-album .img8 {
-    top: 100px;
+    top: 160px;
+    left: 550px;
   }
   .photo-album .img9 {
-    left: 50px;
+    bottom: 50px;
+    left: 70px;
   }
   .photo-album .img11 {
     top: 0px;
@@ -1570,11 +1574,11 @@ a:focus {
     max-width: 450px;
   }
   .eventojovenes figcaption {
-    top: 90%;
+    top: 93%;
   }
   .eventojovenes:hover figcaption,
   .eventojovenes.hover figcaption {
-    top: 100px;
+    top: 300px;
   }
   .eventojovenes h3 {
     font-size: 1em;
@@ -1589,11 +1593,12 @@ a:focus {
   }
   .sectionministerios h1 {
     font-size: 4em;
+    margin-bottom: 1.5em;
   }
   .cardministerios {
-    width: 10em;
+    width: 8.5em;
     height: 12em;
-    margin-top: 12em;
+    margin-top: 8.5em;
   }
   .cardministerios .front h3 {
     font-size: 1em;
@@ -1637,18 +1642,18 @@ a:focus {
   }
   .photo-album h1 {
     top: 10px;
-    left: 5px;
+    left: 0px;
   }
   .photo-album h1 span {
     font-size: 1.5em;
   }
   .photo-album .img1 {
     bottom: 22em;
-    left: 280px;
+    left: 200px;
   }
   .photo-album .img3 {
     left: 20px;
-    top: 100px;
+    top: 40px;
   }
   .photo-album .img4 {
     left: 100px;
@@ -1665,7 +1670,8 @@ a:focus {
     display: none;
   }
   .photo-album .img8 {
-    left: 200px;
+    left: 150px;
+    top: 130px;
   }
   .photo-album .img9 {
     display: none;
@@ -1675,11 +1681,11 @@ a:focus {
     top: 80px;
   }
   .photo-album .img12 {
-    left: 300px;
+    left: 280px;
     top: 170px;
   }
   .photo-album .img14 {
-    left: 100px;
+    left: 30px;
   }
   .photo-album .img15 {
     display: none;
