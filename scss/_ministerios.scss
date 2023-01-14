@@ -756,24 +756,25 @@
     height: 50vh;
   }
   .sectionministerios h1{
-    font-size: 3em;
+    font-size: 4em;
   }
+  
   .cardministerios{
-    width: 6.5em;
-    height: 10em;
-    margin-top: 8em;
+    width: 10em;
+    height: 12em;
+    margin-top: 12em;
   }
   .cardministerios .front h3{
-    font-size: .8em;
+    font-size: 1em;
   }
   .cardministerios .front h4{
-    font-size: .6em;
+    font-size: .8em;
   }
   .cardministerios .back h3{
     font-size: 1em;
   }
   .cardministerios .back p{
-    font-size: .5em;
+    font-size: .7em;
   }
   .sectionministerios .h2{
     font-size: 1.5;
@@ -801,7 +802,7 @@
   .photo-album{
     width: 100%;
     height: 50vh;
-    margin: 30em 0 0em 0;
+    margin: 35em 0 0em 0;
   }
   .photo-album h1{
     top: 10px;
@@ -811,7 +812,8 @@
     font-size: 1.5em;
   }
   .photo-album .img1{
-    display: none;
+    bottom: 22em;
+    left: 280px;
   }
   
   .photo-album .img3{
@@ -826,7 +828,7 @@
     bottom: 300px;
   }
   .photo-album .img6{
-    left: 140px;
+    left: 160px;
     bottom: 300px;
     
   }
@@ -834,16 +836,20 @@
     display: none;
   }
   .photo-album .img8{
-    left: 180px;
+    left: 200px;
   }
   .photo-album .img9{
     display: none;
   }
   .photo-album .img11{
-    right: 170px;
+    right: 50px;
+    top: 80px;
+    
   }
   .photo-album .img12{
-    left: 180px;
+    left: 300px;
+    top: 170px;
+    
   }
   .photo-album .img14{
     left: 100px;

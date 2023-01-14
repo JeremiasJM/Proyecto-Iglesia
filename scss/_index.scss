@@ -264,13 +264,13 @@
     height: 50vh;
   }
   .maininicio .h1{        
-        font-size: 2.5em;              
+        font-size: 4em;              
     }
     .acordeon{
       width: 90%;
       max-width: 50em;
       padding: 0 ;
-      margin: 0 1em;
+      margin: 0 1em 0 2em;
     
       border-radius: 57px;
       background: linear-gradient(145deg, #9ddad4b4, #84b8b2);
@@ -278,9 +278,10 @@
                    -5px -5px 0px #94cec8;
     }
     .gridtexto .right {
-      
-      padding-right: .5em;
-      
+       padding-right: .5em;      
+       }
+       .right .h3{
+        margin-bottom: 1em;
        }
 
     .maininicio .grideventos{
