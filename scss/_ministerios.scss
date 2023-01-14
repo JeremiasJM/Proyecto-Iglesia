@@ -775,11 +775,15 @@
   .cardministerios .front h4{
     font-size: .8em;
   }
+  
   .cardministerios .back h3{
     font-size: 1em;
+    text-align: center;
+    padding-top: 4em;
   }
   .cardministerios .back p{
-    font-size: .7em;
+    display: none;
+    
   }
   .sectionministerios .h2{
     font-size: 1.5;
@@ -807,7 +811,7 @@
   .photo-album{
     width: 100%;
     height: 50vh;
-    margin: 35em 0 0em 0;
+    margin: 22em 0 0em 0;
   }
   .photo-album h1{
     top: 70px;
@@ -827,7 +831,7 @@
   }
   .photo-album .img4{
     left: 100px;
-    top: 50px;
+    top: 100px;
   }
   .photo-album .img5{
     left: 20px;

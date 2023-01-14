@@ -161,6 +161,8 @@
 @media screen and (max-width: 500px) {
     .maincontacto{
         height: auto;
+        padding-top: 5em;
+        
     }
     .form_wrap{
         display: flex;
@@ -169,7 +171,8 @@
         width: 300px;
         height: 100vh;
 
-        margin: 10px auto;
+        margin-top: 0px;
+        
     }
     .cantact_info{
         width: 100%;
@@ -188,5 +191,8 @@
     }
     form.form_contact label{
         padding: 1em 0;
+    }
+    form.form_contact input[type=button]{
+        margin-top: 20px;
     }
 }
