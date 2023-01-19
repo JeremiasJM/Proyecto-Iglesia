@@ -1043,7 +1043,7 @@ body {
   transform: scale(1.05);
 }
 
-.h3 {
+.h3kids {
   text-align: center;
   font-size: 3.5em;
   font-family: var(--tipo-secundaria);
