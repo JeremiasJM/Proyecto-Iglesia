@@ -377,10 +377,10 @@ body {
 }
 
 .maininicio .grideventos {
-  margin: 1em 2em;
+  margin: 1em 1em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 4em;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
 }
 
 .grideventos .article {
@@ -428,10 +428,23 @@ body {
 
 .grideventos .h4 {
   font-family: var(--tipo-principal);
-  font-size: 10em;
+  font-size: 5.5em;
   transform: rotate(-90deg);
 }
 
+@media screen and (max-width: 1024px) {
+  .maininicio .grideventos {
+    margin: 1em 1em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+  }
+  .grideventos .h4 {
+    font-family: var(--tipo-principal);
+    font-size: 4.5em;
+    transform: rotate(-90deg);
+  }
+}
 @media screen and (max-width: 768px) {
   .maininicio .h1 {
     font-size: 6em;
@@ -518,7 +531,7 @@ body {
   }
   .grideventos .h4 {
     font-family: var(--tipo-principal);
-    font-size: 5em;
+    font-size: 3.5em;
     transform: rotate(0deg);
   }
 }
@@ -627,13 +640,13 @@ body {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: auto;
   margin: 0.5em 1em;
-  gap: 5em;
+  gap: 2.5em;
 }
 
 .staff .card {
   position: relative;
-  width: 20em;
-  height: 25em;
+  width: 18em;
+  height: 23em;
   background: #2b364a;
   border-radius: 5px;
   overflow: hidden;
@@ -678,7 +691,7 @@ body {
 }
 
 .staff .infostaff {
-  padding-top: 3em;
+  margin-top: 5em;
   text-align: center;
   color: white;
 }
@@ -694,7 +707,7 @@ body {
 }
 
 .staff .contactostaff {
-  padding-top: 6.5em;
+  margin-top: 3.5em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -712,6 +725,25 @@ body {
   background: #6cf3d5;
 }
 
+@media screen and (max-width: 1024px) {
+  .staff .gridstaff {
+    gap: 1.5 em;
+  }
+  .staff .card {
+    width: 17em;
+    height: 22em;
+  }
+  .staff .head .circulo {
+    width: 270px;
+    height: 270px;
+  }
+  .staff .img {
+    margin: 1em 4em;
+  }
+  .staff .contactostaff {
+    margin-top: 2.5em;
+  }
+}
 @media screen and (max-width: 768px) {
   .sectionabout .h2 {
     font-size: 6em;
@@ -722,25 +754,34 @@ body {
   }
   .staff .gridstaff {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: auto;
     margin: 0.5em 1em;
-    gap: 5em;
+    gap: 1em;
   }
   .staff .card {
-    width: 15em;
-    height: 20em;
+    width: 13em;
+    height: 18em;
   }
   .staff .head .circulo {
-    width: 240px;
-    height: 240px;
+    width: 205px;
+    height: 205px;
+    bottom: 1.5em;
   }
   .staff .img {
-    margin: 1em 3em;
+    margin: 1em 2.5em;
+    width: 135px;
+    height: 135px;
   }
   .staff .infostaff {
-    padding-top: 5em;
+    margin-top: 2em;
+  }
+  .staff .h3 {
+    font-size: 1.2em;
+  }
+  .staff .contactostaff {
+    margin-top: 2em;
   }
 }
 @media screen and (max-width: 500px) {
@@ -774,8 +815,8 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: auto;
-    margin: 0.5em 1em;
-    gap: 1em;
+    margin: 0;
+    gap: 0.5em;
   }
   .staff .card {
     width: 12em;
@@ -792,10 +833,50 @@ body {
     height: 100px;
   }
   .staff .infostaff {
-    padding-top: 1em;
+    margin-top: 0.5em;
+  }
+  .staff .contactostaff {
+    margin-top: 0.5em;
   }
   .staff .h3 {
     font-size: 1em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .sectionabout .cabeceraabout {
+    margin-left: 0;
+  }
+  .sectionabout .h2 {
+    display: none;
+  }
+  .staff {
+    padding: 1em 0;
+  }
+  .staff .card {
+    width: 9em;
+    height: 12em;
+  }
+  .staff .card .head {
+    height: 100px;
+  }
+  .staff .head .circulo {
+    bottom: 2em;
+    width: 145px;
+    height: 145px;
+  }
+  .staff .img {
+    margin: 0.5em 1.8em;
+    width: 90px;
+    height: 90px;
+  }
+  .staff .h3 {
+    font-size: 0.8em;
+  }
+  .staff .h4 {
+    font-size: 0.7em;
+  }
+  .staff .contactostaff a {
+    font-size: 0.7em;
   }
 }
 /* MINISTERIOS */
@@ -962,229 +1043,176 @@ body {
   transform: scale(1.05);
 }
 
-a.polaroid {
-  display: block;
-  text-decoration: none;
-  color: #333;
-  padding: 10px 10px 20px 10px;
-  width: 150px;
-  border: 1px solid #BFBFBF;
-  background-color: white;
-  z-index: 2;
-  font-size: 0.7em;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  -webkit-transition: -webkit-transform 0.5s ease-in;
-}
-
-a.polaroid:hover,
-a.polaroid:focus,
-a.polaroid:active {
-  z-index: 7;
-  border-color: #6A6A6A;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.polaroid img {
-  width: 250px;
-  height: 250px;
-}
-
-a img {
-  border: none;
-  display: block;
-}
-
-.photo-album {
-  position: relative;
-  width: 80%;
-  margin: 10em 5em 0em 10em;
-  height: 69.3vh;
-  bottom: 5.5em;
-}
-
-.photo-album .polaroid {
-  position: absolute;
-}
-
-.photo-album h1 {
-  position: absolute;
-  z-index: 9;
-  top: 200px;
+.h3 {
   text-align: center;
+  font-size: 3.5em;
+  font-family: var(--tipo-secundaria);
+  border-bottom: black solid;
+}
+
+.gridkids {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row: auto;
+  margin: 3em 2em;
+  gap: 0.5em;
+}
+
+.gridkids img {
   width: 100%;
-  line-height: 1.9;
+  height: 30vh;
+  border-radius: 5%;
 }
 
-.photo-album h1 span {
-  background-color: rgba(255, 255, 255, 0.575);
-  font-family: var(--tipo-principal);
-  font-size: 3em;
-  padding: 0.3em;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  border: 1px solid #6A6A6A;
+.gridkids .img1 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
 }
 
-.photo-album .small {
-  width: 200px;
+.gridkids .img1:hover {
+  transform: rotate(20deg);
+  z-index: 2;
 }
 
-.photo-album .small img {
-  width: 200px;
-  height: 200px;
+.gridkids .img2 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
 }
 
-.photo-album .medium {
-  width: 300px;
-  padding: 13px 13px 26px 13px;
-}
-
-.photo-album .medium img {
-  width: 300px;
-  height: 300px;
-}
-
-.photo-album .large {
-  width: 400px;
-  padding: 20px 20px 30px 20px;
-}
-
-.photo-album .large img {
-  width: 400px;
-  height: 400px;
-}
-
-.photo-album .img1 {
-  bottom: 2em;
-  right: 20em;
-  -webkit-transform: rotate(10deg);
-  -moz-transform: rotate(10deg);
-  transform: rotate(10deg);
-}
-
-.photo-album .img2 {
-  top: 4em;
-  right: 0em;
-  -webkit-transform: rotate(-4deg);
-  -moz-transform: rotate(-4deg);
-  transform: rotate(-4deg);
-}
-
-.photo-album .img3 {
-  left: 330px;
-  top: 0;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-}
-
-.photo-album .img4 {
-  top: 10px;
-  left: 495px;
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
+.gridkids .img2:hover {
   transform: rotate(-20deg);
+  z-index: 2;
 }
 
-.photo-album .img5 {
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(1deg);
-  -moz-transform: rotate(1deg);
-  transform: rotate(1deg);
+.gridkids .img3 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
 }
 
-.photo-album .img6 {
-  bottom: 10px;
-  right: 156px;
-  -webkit-transform: rotate(6deg);
-  -moz-transform: rotate(6deg);
-  transform: rotate(6deg);
+.gridkids .img3:hover {
+  transform: rotate(20deg);
+  z-index: 2;
 }
 
-.photo-album .img7 {
-  bottom: 0;
-  left: 400px;
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  transform: rotate(-10deg);
+.gridkids .img4 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
 }
 
-.photo-album .img8 {
-  top: 300px;
-  left: 740px;
-  -webkit-transform: rotate(-8deg);
-  -moz-transform: rotate(-8deg);
-  transform: rotate(-8deg);
+.gridkids .img4:hover {
+  transform: rotate(-20deg);
+  z-index: 2;
 }
 
-.photo-album .img9 {
-  bottom: 0;
-  left: 100px;
-  -webkit-transform: rotate(-8deg);
-  -moz-transform: rotate(-8deg);
-  transform: rotate(-8deg);
+.gridkids .img5 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
 }
 
-.photo-album .img10 {
-  top: 0;
-  left: 1000px;
-  -webkit-transform: rotate(8deg);
-  -moz-transform: rotate(8deg);
-  transform: rotate(8deg);
+.gridkids .img5:hover {
+  transform: rotate(20deg);
+  z-index: 2;
 }
 
-.photo-album .img11 {
-  top: 50px;
-  right: 150px;
-  -webkit-transform: rotate(-8deg);
-  -moz-transform: rotate(-8deg);
-  transform: rotate(-8deg);
+.gridkids .img6 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
 }
 
-.photo-album .img12 {
-  top: 0;
-  left: 780px;
-  -webkit-transform: rotate(18deg);
-  -moz-transform: rotate(18deg);
-  transform: rotate(18deg);
+.gridkids .img6:hover {
+  transform: rotate(-20deg);
+  z-index: 2;
 }
 
-.photo-album .img13 {
-  top: 330px;
-  right: 800px;
-  -webkit-transform: rotate(4deg);
-  -moz-transform: rotate(4deg);
-  transform: rotate(4deg);
+.gridkids .img7 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
 }
 
-.photo-album .img14 {
-  top: 150px;
-  left: 350px;
-  -webkit-transform: rotate(15deg);
-  -moz-transform: rotate(15deg);
-  transform: rotate(15deg);
+.gridkids .img7:hover {
+  transform: rotate(20deg);
+  z-index: 2;
 }
 
-.photo-album .img15 {
-  left: 176px;
-  top: 20px;
-  -webkit-transform: rotate(-8deg);
-  -moz-transform: rotate(-8deg);
-  transform: rotate(-8deg);
+.gridkids .img8 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
 }
 
-a:hover,
-a:focus {
-  z-index: 5;
+.gridkids .img8:hover {
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+
+.gridkids .img9 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
+}
+
+.gridkids .img9:hover {
+  transform: rotate(20deg);
+  z-index: 2;
+}
+
+.gridkids .img10 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
+}
+
+.gridkids .img10:hover {
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+
+.gridkids .img11 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
+}
+
+.gridkids .img11:hover {
+  transform: rotate(20deg);
+  z-index: 2;
+}
+
+.gridkids .img12 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
+}
+
+.gridkids .img12:hover {
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+
+.gridkids .img13 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
+}
+
+.gridkids .img13:hover {
+  transform: rotate(20deg);
+  z-index: 2;
+}
+
+.gridkids .img14 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
+}
+
+.gridkids .img14:hover {
+  transform: rotate(-20deg);
+  z-index: 2;
+}
+
+.gridkids .img15 {
+  transform: rotate(0deg);
+  transition: all 0.3 ease;
+}
+
+.gridkids .img15:hover {
+  transform: rotate(20deg);
+  z-index: 2;
 }
 
 .sectionministerios .cabecerajovenes {
@@ -1333,92 +1361,13 @@ a:focus {
   top: 420px;
 }
 
-/* CONTACTO */
-.maincontacto {
-  width: 100%;
-  height: 86vh;
-  position: relative;
-  padding-top: 7em;
-}
-
-.form_wrap {
-  width: 1050px;
-  height: 530px;
-  margin: 50px auto;
-  display: flex;
-  background: #fff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-}
-
 @media screen and (max-width: 1024px) {
   .actividadkid .p {
     padding: 0;
   }
-  .photo-album {
-    margin: 5em 0 5em 0;
-  }
-  .photo-album h1 {
-    left: 100px;
-  }
-  .photo-album .large {
-    width: 300px;
-    height: 300px;
-  }
-  .photo-album .large img {
-    width: auto;
-    height: 260px;
-  }
-  .photo-album .medium {
-    width: 200px;
-    height: 200px;
-  }
-  .photo-album .medium img {
-    width: auto;
-    height: 160px;
-  }
-  .photo-album .small {
-    width: 150px;
-    height: 150px;
-  }
-  .photo-album .small img {
-    width: auto;
-    height: 130px;
-  }
-  .photo-album .img1 {
-    bottom: 8em;
-  }
-  .photo-album .img3 {
-    left: 150px;
-  }
-  .photo-album .img4 {
-    left: 300px;
-  }
-  .photo-album .img5 {
-    left: 700px;
-  }
-  .photo-album .img6 {
-    right: 100px;
-  }
-  .photo-album .img7 {
-    left: 850px;
-  }
-  .photo-album .img8 {
-    left: 400px;
-    top: 400px;
-  }
-  .photo-album .img10 {
-    left: 840px;
-  }
-  .photo-album .img13 {
-    right: 650px;
-  }
-  .photo-album .img14 {
-    left: 180px;
-  }
-  .photo-album .img15 {
-    left: 20px;
+  .sectionministerios .actividadright img {
+    width: 90%;
+    height: 50vh;
   }
   .cabecerajovenes h3 {
     margin-top: 1em;
@@ -1471,89 +1420,17 @@ a:focus {
   .actividadkid .p {
     font-size: 1.2em;
   }
-  .photo-album h1 {
-    left: 100px;
-    top: 100px;
+  .gridkids {
+    grid-template-columns: repeat(4, 1fr);
   }
-  .photo-album h1 span {
-    font-size: 2em;
-  }
-  .photo-album .img2 {
+  .gridkids .img13 {
     display: none;
   }
-  .photo-album .img10 {
+  .gridkids .img14 {
     display: none;
   }
-  .photo-album .img15 {
+  .gridkids .img15 {
     display: none;
-  }
-  .photo-album .large {
-    width: 200px;
-    height: 200px;
-  }
-  .photo-album .large img {
-    width: auto;
-    height: 180px;
-  }
-  .photo-album .medium {
-    width: 150px;
-    height: 150px;
-  }
-  .photo-album .medium img {
-    width: auto;
-    height: 130px;
-  }
-  .photo-album .small {
-    width: 120px;
-    height: 120px;
-  }
-  .photo-album .small img {
-    width: auto;
-    height: 100px;
-  }
-  .photo-album .img1 {
-    bottom: 2em;
-    left: 250px;
-  }
-  .photo-album .img3 {
-    left: 50px;
-    top: 50px;
-  }
-  .photo-album .img4 {
-    left: 180px;
-  }
-  .photo-album .img5 {
-    width: 150px;
-    height: 150px;
-    left: 350px;
-    bottom: 190px;
-  }
-  .polaroid img {
-    width: auto;
-    height: 130px;
-  }
-  .photo-album .img6 {
-    right: 0;
-    left: 550px;
-    bottom: 290px;
-  }
-  .photo-album .img7 {
-    left: 470px;
-  }
-  .photo-album .img8 {
-    top: 160px;
-    left: 550px;
-  }
-  .photo-album .img9 {
-    bottom: 50px;
-    left: 70px;
-  }
-  .photo-album .img11 {
-    top: 0px;
-    right: 140px;
-  }
-  .photo-album .img12 {
-    left: 450px;
   }
   .cabecerajovenes h2 {
     font-size: 3em;
@@ -1586,7 +1463,7 @@ a:focus {
 }
 @media screen and (max-width: 500px) {
   .mainministerios .sectionministerios {
-    height: 50vh;
+    height: auto;
   }
   .sectionministerios .imgbanner {
     height: 50vh;
@@ -1629,6 +1506,9 @@ a:focus {
     width: 100%;
     height: auto;
   }
+  .sectionministerios .actividadright img {
+    height: auto;
+  }
   .actividadkid .h3 {
     font-size: 1.3em;
     text-align: center;
@@ -1637,61 +1517,15 @@ a:focus {
     font-size: 1em;
     text-align: center;
   }
-  .photo-album {
-    width: 100%;
-    height: 50vh;
-    margin: 22em 0 0em 0;
+  .h3 {
+    font-size: 2em;
   }
-  .photo-album h1 {
-    top: 70px;
-    left: 0px;
+  .gridkids {
+    margin: 1.5em 1em;
+    grid-template-columns: repeat(3, 1fr);
   }
-  .photo-album h1 span {
-    font-size: 1.5em;
-  }
-  .photo-album .img1 {
-    bottom: 22em;
-    left: 160px;
-  }
-  .photo-album .img3 {
-    left: 20px;
-    top: 40px;
-  }
-  .photo-album .img4 {
-    left: 100px;
-    top: 100px;
-  }
-  .photo-album .img5 {
-    left: 20px;
-    bottom: 300px;
-  }
-  .photo-album .img6 {
-    left: 160px;
-    bottom: 0px;
-  }
-  .photo-album .img7 {
-    display: none;
-  }
-  .photo-album .img8 {
-    left: 50px;
-    top: 250px;
-  }
-  .photo-album .img9 {
-    display: none;
-  }
-  .photo-album .img11 {
-    right: 30px;
-    top: 80px;
-  }
-  .photo-album .img12 {
-    left: 260px;
-    top: 200px;
-  }
-  .photo-album .img14 {
-    left: 30px;
-  }
-  .photo-album .img15 {
-    display: none;
+  .gridkids img {
+    height: 20vh;
   }
   .sectionministerios .imgjovenes {
     height: 50vh;

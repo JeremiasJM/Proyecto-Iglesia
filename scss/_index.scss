@@ -99,11 +99,11 @@
    
   .maininicio .grideventos{
       
-      margin: 1em 2em;
+      margin: 1em 1em;
     
       display: grid;
-      grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
-      gap: 4em;
+      grid-template-columns: repeat( 4, 1fr );
+      gap: 2em;
   
   }
   .grideventos .article{
@@ -151,11 +151,30 @@
     }
     .grideventos .h4{
       font-family: var(--tipo-principal);
-      font-size: 10em;
+      font-size: 5.5em;
   
       transform: rotate(-90deg); 
  }  
+@media screen and (max-width: 1024px){
 
+  .maininicio .grideventos{
+      
+    margin: 1em 1em;
+  
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr );
+    gap: 1em;
+
+}
+
+  .grideventos .h4{
+    font-family: var(--tipo-principal);
+    font-size: 4.5em;
+
+    transform: rotate(-90deg); 
+}  
+  
+}
  @media screen and (max-width: 768px){
 
     .maininicio .h1{        
@@ -252,7 +271,7 @@
       }
       .grideventos .h4{
         font-family: var(--tipo-principal);
-        font-size: 5em;
+        font-size: 3.5em;
     
         transform: rotate(0deg); 
    }  
